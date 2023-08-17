@@ -1,0 +1,41 @@
+/* Write your code here: */
+
+h1,h2{
+    color:blueviolet;
+}
+
+/* div p{
+    color:firebrick;
+} */
+
+div>p{
+    color: firebrick;
+}
+/* .box .list li{
+    color: blue;
+} */
+
+ul li{
+    color:blue;
+}
+/* li.done{
+    color: seagreen;
+} this will not work because it starts with li which has lower importance than
+the blue which starts with class*/
+/* .list .done{
+    color: seagreen;
+}  even this will not work because the the starting class is a generation newer than .box of the blue */
+
+.box .list .done{
+    color: seagreen;
+}
+/* this will work so use lowest preference selectors before in the style sheet to make your life easy 
+like ul li instead of class selectors*/
+
+ul p.done{
+    font-size: 0.5rem;
+}
+
+ul>p.done{
+    font-size: 0.5rem;
+}
